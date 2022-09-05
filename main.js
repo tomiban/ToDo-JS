@@ -48,7 +48,7 @@ form.addEventListener('submit', e => {
 });
 
 document.addEventListener('click', e => {
-	if (e.target.matches('.btn-danger')) {
+	if (e.target.matches('.btn-success')) {
 		//selecciona el boton borrar
 		tareas = tareas.filter(item => item.id !== e.target.dataset.id); // devuelve todos los elementos distintos al de borrar
 		pintarTodos();
